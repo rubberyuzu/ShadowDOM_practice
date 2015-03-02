@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shadow test</title>
+	<script src="bower_components/webcomponentsjs/ShadowDOM.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<button id="button">Hello, world!</button>
+	<div id="nameTag"> Yuzu </div>
+	<template id="nameTagTemplate">
+		<style>
+			.outer{
+				border: 2px solid brown;
+				border-radius: 1em;
+				background-color: red;
+				font-size: 20pt;
+				width: 12em;
+				height: 7em;
+				text-align: center;
+			}
+			.boilerplate{
+				color: white;
+				font-family: sans-serif;
+				padding: 0.5em;
+			}
+			.name {
+				color: black;
+				background-color: white;
+				font-family: "Marker Felt", cursive;
+				font-size: 45pt;
+				padding-top: 0.2em;
+			}
+		</style>
+
+		<div class="outer">
+			<div class="boilerplate">
+				Hi! My name is
+			</div>
+			<div class="name">
+				Yuzu
+			</div>
+		</div>
+	</template>
+
+
+ <audio width="300" height="32" src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay="autoplay" controls="controls">
+ Your browser does not support the HTML5 Audio.
+ </audio>
+</body>
+</html>
